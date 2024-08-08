@@ -2,6 +2,7 @@ AWS VPC Module
 This module creates following resources. We are using HA, we are getting first 2 AZ automatically.
 
 VPC
+
 Internet Gateway with VPC association
 2 Public subnets in 1a and 1b
 2 Private subnets in 1a and 1b
@@ -19,6 +20,7 @@ Adding the peering routes in public, private and database route tables
 
 
 Inputs:
+
 project_name (Required) - your project name
 environment (Required) - which environment you are working in
 vpc_cidr (Optional) - Default value is 10.0.0.0/16, user can override
@@ -43,6 +45,7 @@ vpc_peering_tags (Optional) - Default value is empty. type is map
 
 
 Outputs:
+
 vpc_id - VPC ID created
 public_subnet_ids - 2 public subnet ID created
 private_subnet_ids - 2 private subnet ID created
